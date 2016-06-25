@@ -43,5 +43,11 @@ namespace ChargeIO
 
         [JsonProperty("api_allowed_ip_address_ranges")]
         public string ApiAllowedIpAddressRanges { get; set; }
+
+        [JsonProperty("live_events_urls")]
+        public string LiveEventsUrl { get; set; }
+
+        [JsonProperty("test_events_urls")]
+        public string TestEventsUrl { get; set; }
     }
 }
