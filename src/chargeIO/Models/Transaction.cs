@@ -43,6 +43,10 @@ namespace ChargeIO
         [JsonProperty("amount")]
         public int? AmountInCents { get; set; }
 
+        [JsonProperty("method")]
+        [JsonConverter(typeof(PaymentMethodConverter))]
+        public IPaymentMethod PaymentMethod { get; set; }
+
         [JsonProperty("data")]
         public JObject Data { get; set; }
     }

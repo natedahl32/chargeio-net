@@ -16,10 +16,6 @@ namespace ChargeIO
         [JsonProperty("charge_id")]
         public string ChargeId { get; set; }
 
-        [JsonProperty("method")]
-        [JsonConverter(typeof(PaymentMethodConverter))]
-        public IPaymentMethod PaymentMethod { get; set; }
-
         [JsonProperty("void_reference")]
         public string VoidReference { get; set; }
     }
