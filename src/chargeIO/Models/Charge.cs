@@ -10,17 +10,11 @@ namespace ChargeIO
 {
     public class Charge : Transaction
     {
-        [JsonProperty("amount")]
-        public int? AmountInCents { get; set; }
-
         [JsonProperty("gratuity")]
         public int? GratuityInCents { get; set; }
 
         [JsonProperty("currency")]
         public string Currency { get; set; }
-
-        [JsonProperty("reference")]
-        public string Reference { get; set; }
 
         [JsonProperty("capture_reference")]
         public string CaptureReference { get; set; }

@@ -37,6 +37,12 @@ namespace ChargeIO
         [JsonProperty("signature_id")]
         public string SignatureId { get; set; }
 
+        [JsonProperty("reference")]
+        public string Reference { get; set; }
+
+        [JsonProperty("amount")]
+        public int? AmountInCents { get; set; }
+
         [JsonProperty("data")]
         public JObject Data { get; set; }
     }
