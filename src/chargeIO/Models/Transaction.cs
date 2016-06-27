@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using chargeIO.Models;
 
 namespace ChargeIO
 {
@@ -45,7 +46,7 @@ namespace ChargeIO
 
         [JsonProperty("method")]
         [JsonConverter(typeof(PaymentMethodConverter))]
-        public IPaymentMethod PaymentMethod { get; set; }
+        public IPaymentMethodInformation PaymentMethod { get; set; }
 
         [JsonProperty("data")]
         public JObject Data { get; set; }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
+using chargeIO.Models;
 
 namespace ChargeIO
 {
-    public class Card : IPaymentMethod
+    public class Card : IPaymentMethod, IPaymentMethodInformation
     {
         [JsonProperty("type")]
         public string Type { get { return "card"; } }
